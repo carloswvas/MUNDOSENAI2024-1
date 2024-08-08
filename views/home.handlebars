@@ -1,0 +1,18 @@
+<h1>Usuários Cadastrados</h1>
+<div class="container">
+  {{#each usuarios}}
+    <div class="item">
+      <img class="imagem" src="{{this.}}" alt="Imagem usuário" />
+      <h2>{{this.}}</h2>
+      <p>{{this.}}</p>
+      <p>{{this.}}</p>
+      <div class="actions">
+        <a class="details-btn" href="/users/{{this.}}">Ver detalhes</a>
+        <a href="/users/edit/{{this.}}" class="edit-btn">Editar</a>
+        <form action="/users/delete/{{this.}}" method="post">
+          <input type="submit" value="Excluir" class="delete-btn" />
+        </form>
+      </div>
+    </div>
+  {{/each}}
+</div>

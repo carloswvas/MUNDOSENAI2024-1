@@ -1,0 +1,24 @@
+<h1>Editando: {{usuario.}}</h1>
+<form action="/users/update" method="post" class="form">
+  <input type="hidden" name="id" value="{{usuario.}}" />
+  <div class="form-control">
+    <label for="name">Nome:</label>
+    <input type="text" name="nome" value="{{usuario.}}" />
+  </div>
+  <div class="form-control">
+    <label for="profissao">Profissão:</label>
+    <input type="text" name="profissao" value="{{usuario.}}" />
+  </div>
+  <div class="form-control">
+    <label for="email">E-mail:</label>
+    <input type="text" name="email" value="{{usuario.}}" />
+  </div>
+  <div class="form-control">
+    <label for="imagem">Imagem:</label>
+    <input type="text" name="imagem" value="{{usuario.}}" />
+  </div>
+  <div class="form-control">
+    <input type="submit" value="Editar" />
+  </div>
+</form>
+
